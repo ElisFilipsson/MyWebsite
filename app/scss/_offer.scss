@@ -1,0 +1,65 @@
+/*________ERBJUDANDE FÖR PREMIMUM KUND________*/
+
+#offer-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  @extend %margpad0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  z-index: 19;
+    
+ /*this is the id for the picture*/
+  #offer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding:1em;
+      
+  /* then close tha offer */
+#close-offer {
+  @extend %margpad0;
+  background-color: rgba(128, 128, 128, 0.6);
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-content: flex-end;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
+  background-image: url(../images/close.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 20;
+  margin-left: 5em;}
+#magic {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+  
+  input[type=submit],
+  input[type=button] {
+  background: -webkit-linear-gradient(top, #ffffff 0%, #989898 100%);
+  background: $bg_whitegrey;
+  border: #000;
+  color: #6c6c6c;
+  font-weight: bolder;
+  font-size: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #ef8000;
+  border: 1px solid #ef8000;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  padding-left: 10%;}
+}
+  }}

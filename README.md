@@ -1,0 +1,1 @@
+This is a project for the course Responsive design 1 at KYH authored by Sandra Filipsson.

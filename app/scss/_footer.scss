@@ -1,0 +1,41 @@
+/*________FOOTER________*/
+
+.foot {
+  background: linear-gradient(to bottom, #222222 0%, #000000 100%);
+  flex-flow: row wrap;
+  display: flex;
+  color: #ef8000;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  bottom: 0px;
+  border-top: 4px solid #ef8000;
+    
+  
+  #social {
+    color: #ef8000;
+    padding: 0.5em;
+    font-size: 3em;
+    display: flex;
+    flex: 1 1 20%;
+    border: 0px;
+    justify-content: center;
+
+    @media screen and (min-width: 500px) {
+      
+      &:hover {
+      color: #f7b503;}
+    }
+  }
+  #text {
+    font-size: 0.7em;
+    color: #f7b503;
+    display: flex;
+    padding: 5px;
+    flex: 1 1 100%;
+    justify-content: center;}
+  #copy {
+    font-size: 1em;}
+  #trade {
+    font-size: 0.6em;}
+}
