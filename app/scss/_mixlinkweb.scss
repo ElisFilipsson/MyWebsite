@@ -1,0 +1,13 @@
+@import 'variabler';
+
+@mixin link-web($padding, $bg){
+    background: $bg;
+    flex: 2 1 5%;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid $color_grey;
+    border-top: 1px solid $color_black;
+    color: #aaaaaa;
+    text-align: center;
+    padding: $padding;
+    font-weight: bold;}

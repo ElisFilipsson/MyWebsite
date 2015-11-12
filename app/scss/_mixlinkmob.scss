@@ -1,0 +1,12 @@
+@import 'variabler';
+/*Mixins*/
+@mixin link-mob($padding, $bg){
+    background: $bg;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid $color_grey;
+    border-top: 1px solid $color_black;
+    color: #aaaaaa;
+    text-align: center;
+    padding: $padding;
+    font-weight: bold;}
