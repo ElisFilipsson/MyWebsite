@@ -1,0 +1,14 @@
+/*Variabler*/
+$color_black:#000000;
+$color_orange:#ef8000;
+$color_lightblue:#0093ff;
+$color_darkblue:#003c69;
+$color_grey:$color_black + 30;
+$color_lightgrey:$color_grey + 60;
+$color_light2grey:$color_grey + 90;
+$bg_greyblack:linear-gradient(to bottom, $color_grey 0%, $color_black 100%);
+$bg_whitegrey:linear-gradient(to bottom, #ffffff 0%, #989898 100%);
+$linkcolor_white:#ffffff;
+$bg_greygrey:linear-gradient(to bottom, $color_lightgrey 0%, $color_grey 100%);
+$bg_lightgreygrey:linear-gradient(to bottom, $color_light2grey 0%, $color_lightgrey 100%);
+$bg_blue:linear-gradient(to bottom, $color_lightblue 0%, $color_darkblue 100%);

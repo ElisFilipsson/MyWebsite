@@ -1,3 +1,5 @@
+@import 'variabler';
+
 /*________MAIN________*/
 
 /*________PREMIUM KUND________*/
@@ -7,8 +9,21 @@
   color: #383838;
   background: linear-gradient(to bottom, #adadad 0%, #919191 100%);
   font: 15px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+#premiumkund {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: $color_darkblue;}
+.imgS{
+    max-width: 520px;
+    width: 100%;
+    height: 100%;}
 }
+
 /*________VÄLKOMMEN________*/
+
 #valkommen {
   @extend #main-section;
   display: flex;
@@ -16,26 +31,40 @@
    h3 {
    padding-right: 5%;}
   }
+
 /*________SKICKAT________*/
+
 #skickat{
     @extend #main-section;
 h3 {
    padding-right: 5%;}
   }
+
 /*________KONTAKT________*/
+
 #kontakt{
   @extend #main-section;
   display: none;
   flex-flow: row wrap;
 align-content: center;
-justify-content: center;}
+justify-content: center;
+    p{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;}}
 
 #intresse {
   padding: 1em;
-  color: #383838;
-  background: $bg_whitegrey;
+  text-align: center;
+  color: #b9dbf8;
+  background: $bg_blue;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;}
+
+#intresse2 {
+  @extend #intresse;
+  color: #383838;
+  background: $bg_whitegrey;}
 
 .form-style {
   margin: 10px auto;
@@ -62,8 +91,8 @@ justify-content: center;}
   input[type=email]:focus,
   textarea:focus,
   select:focus {
-    box-shadow: 0 0 8px #ef8000;
-    border: 1px solid #ef8000;
+    box-shadow: 0 0 8px $color_orange;
+    border: 1px solid $color_orange;
     background-color: #a3a3a3;}
   
   input[type=text],
@@ -106,9 +135,9 @@ justify-content: center;}
     width: 100%;
     height: 60px;
     max-width: 800px;
-    box-shadow: 0 0 8px #ff0707;
-    border: 1px solid #ff0707;
-    text-shadow: 2px 0 2px #ff0707;}
+    box-shadow: 0 0 8px $color_lightblue;
+    border: 1px solid $color_darkblue;
+    text-shadow: 2px 0 2px $color_lightblue}
   .required {
     color: #ff0707;}
   @media screen and (min-width: 500px) {

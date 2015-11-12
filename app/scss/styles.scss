@@ -1,55 +1,26 @@
 /*all comments on this page is written on the row above the code in question*/
 
-@import 'reset';
 @import 'offer';
 @import 'header';
 @import 'main';
 @import 'footer';
+@import 'variabler';
 
-/*Variabler*/
-$color_black:#000000;
-$color_orange:rgb(240, 128, 0);
-$color_grey:$color_black + 30;
-$color_lightgrey:$color_grey + 60;
-$bg_greyblack:linear-gradient(to bottom, $color_grey 0%, $color_black 100%);
-$bg_whitegrey:linear-gradient(to bottom, #ffffff 0%, #989898 100%);
-$linkcolor_white:#ef8000;
-$bg_greygrey:linear-gradient(to bottom, $color_lightgrey 0%, $color_grey 100%);
+
 
 /*Mallar*/
 %children {
   height: 5px;
   padding: 0;
-  background: $color_black;
 }
 %margpad0{
   margin:0;
   padding:0;}
-
-/*Mixins*/
-@mixin link-mob($padding, $bg){
-    background: $bg;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid $color_grey;
-    border-top: 1px solid $color_black;
-    color: #aaaaaa;
-    text-align: center;
-    padding: $padding;
-    font-weight: bold;}
-
-@mixin link-web($padding, $bg){
-    background: $bg;
-    flex: 2 1 5%;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid $color_grey;
-    border-top: 1px solid $color_black;
-    color: #aaaaaa;
-    text-align: center;
-    padding: $padding;
-    font-weight: bold;}
-
+%hoverwhite{
+    background: $bg_whitegrey;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    text-shadow: 1px 1px 1px #3b3b3b;}
 
 /*_____________________________________mobile first */
 
@@ -66,7 +37,6 @@ body {
     background-size: 100%;
     @extend %margpad0;
 }
-
 
 .everything{
   width: 100%;
